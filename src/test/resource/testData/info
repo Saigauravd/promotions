@@ -1,0 +1,52 @@
+ isDisplayed() -->
+ getWindowHandle() -->
+ getWindowHandles()  --->
+ isEnabled() ---->
+ WebDriver driver = new FirefoxDriver();
+ //Creating an object of Date class
+Date d = new Date();
+//Printing the actual date
+String date1 = d.toString();
+System.out.println(date1);
+//replacing the colon present in the date timestamp format to "_" using 
+replaceAll()
+//method of String class
+String date2 = date1.replaceAll(":", "_");
+System.out.println(date2);
+==============================================
+r.keyPress(KeyEvent.VK_CONTROL);
+r.keyPress(KeyEvent.VK_A);
+r.keyPress(KeyEvent.VK_DELETE);
+r.keyRelease(KeyEvent.VK_CONTROL);
+r.keyRelease(KeyEvent.VK_A);
+r.keyRelease(KeyEvent.VK_DELETE);===================================
+/Creating an object of Robot Class
+Robot r = new Robot();
+//move the mouse by x and y coordinate
+r.mouseMove(300, 500)=========================================
+Q: Priority of using locators
+1. id
+2. name
+3. linkText
+4. cssSelector--------Q4 : How do we handle dynamically changing objects on the webpage ?
+Ans : By using xpath with contains function when the attribute value or the text partially 
+changes.
+ If the text completely changes, we handle this scenario by using independent-dependent 
+xpath concept=====================================================================
+isDisplayed()
+JavascriptExecutor ======== 	1. executeScript()
+   task  --  Create a sample webpage using the below html source code wherein the second textbox is 
+disabled as shown below.
+   <input id="t1" type ="text"  value = "qspdrrr">  
+   <input id="t2" type ="text" value = "JeEspdrrr" 		disabled=true>
+   HANDLING FRAMES
+   driver.switchTo().defaultContent(); → it will take you to the main page
+driver.switchTo().parentFrame(); → it will take you to the immediate parent frame
+   ================================================================================
+   1. Javascript Popup
+2. Hidden Division Popup
+3. File Upload popup
+4. File download popup
+5. Child browser popup
+6. Window popup
+   
