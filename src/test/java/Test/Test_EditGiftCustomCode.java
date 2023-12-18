@@ -3,9 +3,12 @@ package Test;
 import org.testng.annotations.Test;
 
 import extentlisteners.TestNGListeners;
-@Test(priority = 2)
+
 public class Test_EditGiftCustomCode extends TestNGListeners{
-	public void test_EditGiftCustomCode() {
+	
+	
+	@Test(priority = 10)
+	public void test_EditGiftCustomCode() throws InterruptedException {
 		editgift.Editing_coupon();
 	}
 

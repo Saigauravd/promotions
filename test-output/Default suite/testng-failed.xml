@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test.Test_AddGiftCustomCode">
+      <class name="Test.Test_Delete">
         <methods>
           <include name="init"/>
+          <include name="testDelete"/>
           <include name="log"/>
           <include name="Obj"/>
-          <include name="execute"/>
+          <include name="End"/>
         </methods>
-      </class> <!-- Test.Test_AddGiftCustomCode -->
+      </class> <!-- Test.Test_Delete -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

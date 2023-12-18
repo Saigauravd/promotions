@@ -8,20 +8,30 @@
     <classes>
       <class name="Test.Test_EditGiftCustomCode">
         <methods>
-          <include name="onStart"/>
           <include name="init"/>
           <include name="test_EditGiftCustomCode"/>
           <include name="log"/>
           <include name="Obj"/>
-          <include name="onFinish"/>
-          <include name="onTestSuccess"/>
-          <include name="onTestStart"/>
-          <include name="onTestSkipped"/>
-          <include name="onTestFailedButWithinSuccessPercentage"/>
-          <include name="onTestFailure"/>
-          <include name="onTestFailedWithTimeout"/>
+          <include name="End"/>
         </methods>
       </class> <!-- Test.Test_EditGiftCustomCode -->
+      <class name="Test.Test_AddcouponCode">
+        <methods>
+          <include name="Add_Couponwith_gift_and_systemGenerated_code"/>
+          <include name="Obj"/>
+          <include name="Test_Add_Coupon_Dicount_amt_without_Adv"/>
+          <include name="Test_Add_coupon_Discount_unit_with_adv"/>
+          <include name="Test_Add_Coupon_Discount_Amount_with_additional_Setting"/>
+          <include name="Test_Add_Coupon_Disount_percentage_with_adv"/>
+          <include name="Test_Add_Coupon_Discount_percentage_without_adv"/>
+          <include name="End"/>
+          <include name="Test_Add_Coupon_Discount_other_with_Adv"/>
+          <include name="execute"/>
+          <include name="Test_Add_Coupon_Discount_unit_without_adv"/>
+          <include name="init"/>
+          <include name="log"/>
+        </methods>
+      </class> <!-- Test.Test_AddcouponCode -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -49,11 +49,11 @@ WebElement username ;
 
 	public void credentialsuser(String use)
 	{
-
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-
+		
 
 		Actions act = new Actions(driver);
+		
 		username.sendKeys(use);
 
 		act.sendKeys(Keys.ENTER).build().perform();

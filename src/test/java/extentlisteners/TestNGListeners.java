@@ -1,9 +1,14 @@
 package extentlisteners;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
@@ -77,5 +82,15 @@ System.out.println("Test case failed : "+ result.getName());
 	}
 	
 	
+	public void excel() throws FileNotFoundException
+	{
+		String path = System.getProperty("user.dir")+"//Excel.xlsx";
+		File file = new File(path);
+		FileInputStream fis = new FileInputStream(file);
+		
+		XSSFWorkbook book = new XSSFWorkbook();
+		XSSFSheet sheet1 = book.getSheet("Coupons");
+		DataFormatter df =new  DataFormatter();
+	}
 
 }
