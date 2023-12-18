@@ -137,9 +137,9 @@ public class AddCoupon_page  {
 		refresh.click();
 
 
-		String expectedCouponName = "Coupon with Gift and Custom Code";
+		String expectedCouponName = "Coupon With Gift And Custom Code";
 		String actualCouponName = driver.findElement(By.xpath("//*[text()='Coupon with Gift and Custom Code']")).getText();
-		Assert.assertEquals( expectedCouponName, actualCouponName);
+		Assert.assertEquals( expectedCouponName, actualCouponName,"Coupon title not matched :- ");
 
 	}
 	public void Add_Coupon_with_gift_and_systemGenerated_code(String GName, String GDesc) throws InterruptedException  {
@@ -175,9 +175,9 @@ public class AddCoupon_page  {
 		Assert.assertTrue(Save.isDisplayed(), "Save button is not displayed" );
 		Save.click();
 		refresh.click();
-		String expectedCouponName = "Coupon with Gift and systemGenerated code";
+		String expectedCouponName = "Coupon With Gift And SystemGenerated Code";
 		String actualCouponName = driver.findElement(By.xpath("//*[text()='Coupon with Gift and systemGenerated code']")).getText();
-		Assert.assertEquals( expectedCouponName, actualCouponName);
+		Assert.assertEquals( expectedCouponName, actualCouponName,"Coupon title not matched :- ");
 	}
 
 	public void Add_Coupon_Discount_Amount_with_additional_Setting(String DaName, String DaDesc) throws InterruptedException 
@@ -206,7 +206,7 @@ public class AddCoupon_page  {
 		refresh.click();
 		String expectedCouponName = "Disc Amt With Adv Setting";
 		String actualCouponName = driver.findElement(By.xpath("//*[text()='Disc Amt With Adv Setting']")).getText();
-		Assert.assertEquals(expectedCouponName, actualCouponName);
+		Assert.assertEquals(expectedCouponName, actualCouponName,"Coupon title not matched :- ");
 	}
 
 	public void Add_Coupon_Dicount_amt_without_Adv(String DaName, String DaDesc)  
@@ -225,9 +225,9 @@ public class AddCoupon_page  {
 		Assert.assertTrue(Save.isDisplayed(), "Save button is not displayed" );
 		Save.click();
 		refresh.click();
-		String expectedCouponName = "Coupon with Disc without adv";
+		String expectedCouponName = "Coupon With Disc Without Adv";
 		String actualCouponName = driver.findElement(By.xpath("//*[text()='Coupon with Disc without adv']")).getText();
-		Assert.assertEquals(expectedCouponName, actualCouponName);
+		Assert.assertEquals(expectedCouponName, actualCouponName,"Coupon title not matched :- ");
 	}
 	public void Add_Coupon_Disount_percentage_with_adv(String DpName, String DpDesc) throws InterruptedException  {
 	//	wait.until(ExpectedConditions.elementToBeClickable(AddB)).click();
@@ -254,9 +254,9 @@ public class AddCoupon_page  {
 		Assert.assertTrue(Save.isDisplayed(), "Save button is not displayed" );
 		Save.click();
 		refresh.click();
-		String expectedCouponName = "Disc pert With Adv Setting";
+		String expectedCouponName = "Disc Pert With Adv Setting";
 		String actualCouponName = driver.findElement(By.xpath("//*[text()='Disc pert With Adv Setting']")).getText();
-		Assert.assertEquals( expectedCouponName, actualCouponName);
+		Assert.assertEquals( expectedCouponName, actualCouponName,"Coupon title not matched :- ");
 	}
 
 	public void Add_Coupon_Discount_percentage_without_adv(String DpName, String DpDesc)  
@@ -276,9 +276,9 @@ public class AddCoupon_page  {
 		Assert.assertTrue(Save.isDisplayed(), "Save button is not displayed" );
 		Save.click();
 		refresh.click();
-		String expectedCouponName = "Disc pert Without Adv Setting";
+		String expectedCouponName = "Disc Pert Without Adv Setting";
 		String actualCouponName = driver.findElement(By.xpath("//*[text()='Disc pert Without Adv Setting']")).getText();
-		Assert.assertEquals("Coupon name doesn't match", expectedCouponName, actualCouponName);
+		Assert.assertEquals(expectedCouponName, actualCouponName,"Coupon title not matched :- ");
 	}
 	public void Add_coupon_Discount_unit_with_adv(String DuName, String DuDesc)  {
 		try {
@@ -308,9 +308,9 @@ public class AddCoupon_page  {
 			Assert.assertTrue(Save.isDisplayed(), "Save button is not displayed" );
 			Save.click();
 			refresh.click();
-			String expectedCouponName = "Disc unit With Adv Setting";
-			String actualCouponName = driver.findElement(By.xpath("//*[text()='Disc unit With Adv Setting]")).getText();
-			Assert.assertEquals( expectedCouponName, actualCouponName);
+			String expectedCouponName = "Disc Unit With Adv Setting";
+			String actualCouponName = driver.findElement(By.xpath("//*[text()='Disc unit With Adv Setting']")).getText();
+			Assert.assertEquals( expectedCouponName, actualCouponName,"Coupon title not matched :- ");
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -337,9 +337,9 @@ public class AddCoupon_page  {
 		Assert.assertTrue(Save.isDisplayed(), "Save button is not displayed" );
 		Save.click();
 		refresh.click();
-		String expectedCouponName = "Disc  unit Without Adv Setting";
+		String expectedCouponName = "Disc  Unit Without Adv Setting";
 		String actualCouponName = driver.findElement(By.xpath("//*[text()='Disc  unit Without Adv Setting']")).getText();
-		Assert.assertEquals( expectedCouponName, actualCouponName);
+		Assert.assertEquals( expectedCouponName, actualCouponName,"Coupon title not matched :- ");
 	}
 	public void Add_Coupon_Discount_other_with_Adv(String DoName, String DoDesc) throws InterruptedException  
 	{
@@ -368,9 +368,9 @@ public class AddCoupon_page  {
 		Assert.assertTrue(Save.isDisplayed(), "Save button is not displayed" );
 		Save.click();
 		refresh.click();
-		String expectedCouponName = "Disc  other Without Adv Setting";
+		String expectedCouponName = "Disc  Other Without Adv Setting";
 		String actualCouponName = driver.findElement(By.xpath("//*[text()='Disc  other Without Adv Setting']")).getText();
-		Assert.assertEquals( expectedCouponName, actualCouponName);
+		Assert.assertEquals( expectedCouponName, actualCouponName,"Coupon title not matched :- ");
 	}
 
 

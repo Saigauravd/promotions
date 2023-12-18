@@ -1,5 +1,7 @@
 package pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
@@ -25,15 +27,18 @@ public class DeleteCoupon_Page {
     public void delete() throws InterruptedException {
         GeneralSetting.click();
         CouponM.click();
-        Thread.sleep(3000);
+        
 
         for (int i = 1; i <= 9; i++) {
         	  try {
+        		
                   WebElement deleteButton = driver.findElement(By.xpath("(//*[@rv-on-click='rv.openDelete'])[" + i + "]"));
+                 Thread.sleep(2000);
                   deleteButton.click();
               } catch (StaleElementReferenceException e) {
                   // Element might have become stale, re-locate and click again
                   WebElement deleteButton = driver.findElement(By.xpath("(//*[@rv-on-click='rv.openDelete'])[" + i + "]"));
+                  Thread.sleep(2000);
                   deleteButton.click();
               }
 

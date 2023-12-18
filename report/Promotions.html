@@ -45,7 +45,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Dec 18, 2023 02:32:27 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Dec 18, 2023 04:31:15 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -60,7 +60,8 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
@@ -104,10 +105,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='9.091%'><span class='strong'>1</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='90%'>9</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>1</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='72.727%'>8</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>2</span> others
                 </div>
             </div>
         </div>
@@ -128,14 +129,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>execute</span>
-						<span class='test-time'>Dec 18, 2023 02:32:55 PM</span>
+						<span class='test-time'>Dec 18, 2023 04:31:43 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 18, 2023 02:32:55 PM</span>
-	<span class='label end-time'>Dec 18, 2023 02:33:15 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 19s+533ms</span>
+	<span class='label start-time'>Dec 18, 2023 04:31:43 PM</span>
+	<span class='label end-time'>Dec 18, 2023 04:32:01 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 18s+361ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -149,14 +150,15 @@
 		<tbody>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>2:33:15 PM</td>
+				<td class='timestamp'>4:32:01 PM</td>
 				<td class='step-details'>
-						<textarea disabled class="code-block">java.lang.AssertionError: Coupon With Gift And Custom Code expected [Coupon with Gift and Custom Code] but found [Coupon name doesn't match]
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [Coupon With Gift And Custom Code] but found [Coupon with Gift and Custom Code]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
 	at pages.AddCoupon_page.Add_Coupon_with_Gift_and_Custom_Code(AddCoupon_page.java:142)
 	at Test.Test_AddcouponCode.execute(Test_AddcouponCode.java:16)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -199,14 +201,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>Add_Couponwith_gift_and_systemGenerated_code</span>
-						<span class='test-time'>Dec 18, 2023 02:33:15 PM</span>
+						<span class='test-time'>Dec 18, 2023 04:32:01 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 18, 2023 02:33:15 PM</span>
-	<span class='label end-time'>Dec 18, 2023 02:33:25 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+385ms</span>
+	<span class='label start-time'>Dec 18, 2023 04:32:01 PM</span>
+	<span class='label end-time'>Dec 18, 2023 04:32:12 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+381ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -220,14 +222,15 @@
 		<tbody>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>2:33:25 PM</td>
+				<td class='timestamp'>4:32:12 PM</td>
 				<td class='step-details'>
-						<textarea disabled class="code-block">java.lang.AssertionError: Coupon With Gift And SystemGenerated Code expected [Coupon with Gift and systemGenerated code] but found [Coupon name doesn't match]
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [Coupon With Gift And SystemGenerated Code] but found [Coupon with Gift and systemGenerated code]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
 	at pages.AddCoupon_page.Add_Coupon_with_gift_and_systemGenerated_code(AddCoupon_page.java:180)
 	at Test.Test_AddcouponCode.Add_Couponwith_gift_and_systemGenerated_code(Test_AddcouponCode.java:21)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -267,17 +270,17 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>Test_Add_Coupon_Discount_Amount_with_additional_Setting</span>
-						<span class='test-time'>Dec 18, 2023 02:33:25 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Dec 18, 2023 04:32:12 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 18, 2023 02:33:25 PM</span>
-	<span class='label end-time'>Dec 18, 2023 02:33:35 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 9s+787ms</span>
+	<span class='label start-time'>Dec 18, 2023 04:32:12 PM</span>
+	<span class='label end-time'>Dec 18, 2023 04:32:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 9s+703ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -289,47 +292,11 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>2:33:35 PM</td>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>4:32:22 PM</td>
 				<td class='step-details'>
-						<textarea disabled class="code-block">java.lang.AssertionError: Disc Amt With Adv Setting expected [Disc Amt With Adv Setting] but found [Coupon name doesn't match]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at pages.AddCoupon_page.Add_Coupon_Discount_Amount_with_additional_Setting(AddCoupon_page.java:209)
-	at Test.Test_AddcouponCode.Test_Add_Coupon_Discount_Amount_with_additional_Setting(Test_AddcouponCode.java:26)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</textarea>
+						Test case passed
 					
 				</td>
 			</tr>
@@ -341,14 +308,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
 					<div class='test-heading'>
 						<span class='test-name'>Test_Add_Coupon_Dicount_amt_without_Adv</span>
-						<span class='test-time'>Dec 18, 2023 02:33:35 PM</span>
+						<span class='test-time'>Dec 18, 2023 04:32:22 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 18, 2023 02:33:35 PM</span>
-	<span class='label end-time'>Dec 18, 2023 02:33:39 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+334ms</span>
+	<span class='label start-time'>Dec 18, 2023 04:32:22 PM</span>
+	<span class='label end-time'>Dec 18, 2023 04:32:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+802ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -362,14 +329,15 @@
 		<tbody>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>2:33:39 PM</td>
+				<td class='timestamp'>4:32:24 PM</td>
 				<td class='step-details'>
-						<textarea disabled class="code-block">java.lang.AssertionError: Coupon With Disc Without Adv expected [Coupon with Disc without adv] but found [Coupon name doesn't match]
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [Coupon With Disc Without Adv] but found [Coupon with Disc without adv]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
 	at pages.AddCoupon_page.Add_Coupon_Dicount_amt_without_Adv(AddCoupon_page.java:230)
 	at Test.Test_AddcouponCode.Test_Add_Coupon_Dicount_amt_without_Adv(Test_AddcouponCode.java:31)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -412,14 +380,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='5'>
 					<div class='test-heading'>
 						<span class='test-name'>Test_Add_Coupon_Disount_percentage_with_adv</span>
-						<span class='test-time'>Dec 18, 2023 02:33:39 PM</span>
+						<span class='test-time'>Dec 18, 2023 04:32:25 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 18, 2023 02:33:39 PM</span>
-	<span class='label end-time'>Dec 18, 2023 02:33:49 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+295ms</span>
+	<span class='label start-time'>Dec 18, 2023 04:32:25 PM</span>
+	<span class='label end-time'>Dec 18, 2023 04:32:36 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+271ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -433,14 +401,15 @@
 		<tbody>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>2:33:49 PM</td>
+				<td class='timestamp'>4:32:36 PM</td>
 				<td class='step-details'>
-						<textarea disabled class="code-block">java.lang.AssertionError: Disc Pert With Adv Setting expected [Disc pert With Adv Setting] but found [Coupon name doesn't match]
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [Disc Pert With Adv Setting] but found [Disc pert With Adv Setting]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
 	at pages.AddCoupon_page.Add_Coupon_Disount_percentage_with_adv(AddCoupon_page.java:259)
 	at Test.Test_AddcouponCode.Test_Add_Coupon_Disount_percentage_with_adv(Test_AddcouponCode.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -483,14 +452,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='6'>
 					<div class='test-heading'>
 						<span class='test-name'>Test_Add_Coupon_Discount_percentage_without_adv</span>
-						<span class='test-time'>Dec 18, 2023 02:33:49 PM</span>
+						<span class='test-time'>Dec 18, 2023 04:32:36 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 18, 2023 02:33:49 PM</span>
-	<span class='label end-time'>Dec 18, 2023 02:33:53 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+352ms</span>
+	<span class='label start-time'>Dec 18, 2023 04:32:36 PM</span>
+	<span class='label end-time'>Dec 18, 2023 04:32:40 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+212ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -504,7 +473,7 @@
 		<tbody>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>2:33:53 PM</td>
+				<td class='timestamp'>4:32:40 PM</td>
 				<td class='step-details'>
 						<textarea disabled class="code-block">java.lang.AssertionError: Disc Pert Without Adv Setting expected [Disc pert Without Adv Setting] but found [Coupon name doesn't match]
 	at org.testng.Assert.fail(Assert.java:99)
@@ -554,14 +523,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='7'>
 					<div class='test-heading'>
 						<span class='test-name'>Test_Add_coupon_Discount_unit_with_adv</span>
-						<span class='test-time'>Dec 18, 2023 02:33:53 PM</span>
+						<span class='test-time'>Dec 18, 2023 04:32:40 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 18, 2023 02:33:53 PM</span>
-	<span class='label end-time'>Dec 18, 2023 02:34:04 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+353ms</span>
+	<span class='label start-time'>Dec 18, 2023 04:32:40 PM</span>
+	<span class='label end-time'>Dec 18, 2023 04:32:51 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+663ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -575,7 +544,7 @@
 		<tbody>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>2:34:04 PM</td>
+				<td class='timestamp'>4:32:51 PM</td>
 				<td class='step-details'>
 						<textarea disabled class="code-block">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //*[text()='Disc unit With Adv Setting] because of the following error:
 SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//*[text()='Disc unit With Adv Setting]' is not a valid XPath expression.
@@ -584,9 +553,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c0dee8961c953182480c8a761dc9c790, findElement {using=xpath, value=//*[text()='Disc unit With Adv Setting]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.72, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\SAIGAU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59489}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59489/devtoo..., se:cdpVersion: 120.0.6099.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c0dee8961c953182480c8a761dc9c790
+Command: [a9d553e0ca3b594d3d5527cc65684e23, findElement {using=xpath, value=//*[text()='Disc unit With Adv Setting]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.72, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\SAIGAU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53793/devtoo..., se:cdpVersion: 120.0.6099.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a9d553e0ca3b594d3d5527cc65684e23
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -645,14 +614,14 @@ Session ID: c0dee8961c953182480c8a761dc9c790
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='8'>
 					<div class='test-heading'>
 						<span class='test-name'>Test_Add_Coupon_Discount_unit_without_adv</span>
-						<span class='test-time'>Dec 18, 2023 02:34:04 PM</span>
+						<span class='test-time'>Dec 18, 2023 04:32:52 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 18, 2023 02:34:04 PM</span>
-	<span class='label end-time'>Dec 18, 2023 02:34:08 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+694ms</span>
+	<span class='label start-time'>Dec 18, 2023 04:32:52 PM</span>
+	<span class='label end-time'>Dec 18, 2023 04:32:55 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+785ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -666,14 +635,15 @@ Session ID: c0dee8961c953182480c8a761dc9c790
 		<tbody>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>2:34:08 PM</td>
+				<td class='timestamp'>4:32:55 PM</td>
 				<td class='step-details'>
-						<textarea disabled class="code-block">java.lang.AssertionError: Disc Unit Without Adv Setting expected [Disc  unit Without Adv Setting] but found [Coupon name doesn't match]
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [Disc Unit Without Adv Setting] but found [Disc  unit Without Adv Setting]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
 	at pages.AddCoupon_page.Add_Coupon_Discount_unit_without_adv(AddCoupon_page.java:342)
 	at Test.Test_AddcouponCode.Test_Add_Coupon_Discount_unit_without_adv(Test_AddcouponCode.java:51)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -716,14 +686,14 @@ Session ID: c0dee8961c953182480c8a761dc9c790
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='9'>
 					<div class='test-heading'>
 						<span class='test-name'>Test_Add_Coupon_Discount_other_with_Adv</span>
-						<span class='test-time'>Dec 18, 2023 02:34:08 PM</span>
+						<span class='test-time'>Dec 18, 2023 04:32:56 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 18, 2023 02:34:08 PM</span>
-	<span class='label end-time'>Dec 18, 2023 02:34:19 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+755ms</span>
+	<span class='label start-time'>Dec 18, 2023 04:32:56 PM</span>
+	<span class='label end-time'>Dec 18, 2023 04:33:07 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+987ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -737,14 +707,15 @@ Session ID: c0dee8961c953182480c8a761dc9c790
 		<tbody>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>2:34:19 PM</td>
+				<td class='timestamp'>4:33:07 PM</td>
 				<td class='step-details'>
-						<textarea disabled class="code-block">java.lang.AssertionError: Disc Other Without Adv Setting expected [Disc  other Without Adv Setting] but found [Coupon name doesn't match]
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [Disc Other Without Adv Setting] but found [Disc  other Without Adv Setting]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
 	at pages.AddCoupon_page.Add_Coupon_Discount_other_with_Adv(AddCoupon_page.java:373)
 	at Test.Test_AddcouponCode.Test_Add_Coupon_Discount_other_with_Adv(Test_AddcouponCode.java:56)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -787,14 +758,14 @@ Session ID: c0dee8961c953182480c8a761dc9c790
 				<li class='test displayed active  skip' status='skip' bdd='false' test-id='10'>
 					<div class='test-heading'>
 						<span class='test-name'>test_EditGiftCustomCode</span>
-						<span class='test-time'>Dec 18, 2023 02:34:20 PM</span>
+						<span class='test-time'>Dec 18, 2023 04:33:07 PM</span>
 						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 18, 2023 02:34:20 PM</span>
-	<span class='label end-time'>Dec 18, 2023 02:34:20 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+	<span class='label start-time'>Dec 18, 2023 04:33:07 PM</span>
+	<span class='label end-time'>Dec 18, 2023 04:33:07 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -808,7 +779,42 @@ Session ID: c0dee8961c953182480c8a761dc9c790
 		<tbody>
 			<tr class='log' status='skip'>
 				<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-				<td class='timestamp'>2:34:20 PM</td>
+				<td class='timestamp'>4:33:07 PM</td>
+				<td class='step-details'>
+						Test case got skipped
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  skip' status='skip' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>testDelete</span>
+						<span class='test-time'>Dec 18, 2023 04:33:07 PM</span>
+						<span class='test-status right skip'>skip</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 18, 2023 04:33:07 PM</span>
+	<span class='label end-time'>Dec 18, 2023 04:33:07 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='skip'>
+				<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+				<td class='timestamp'>4:33:07 PM</td>
 				<td class='step-details'>
 						Test case got skipped
 					
@@ -860,7 +866,7 @@ Session ID: c0dee8961c953182480c8a761dc9c790
 				<li class='exception displayed active'>
 					<div class='exception-heading'>
 						<span class='exception-name'>java.lang.AssertionError</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>8</span></span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>7</span></span>
 					</div>
 					<div class='exception-content hide'>
 						<div class='exception-tests'>
@@ -874,15 +880,16 @@ Session ID: c0dee8961c953182480c8a761dc9c790
 								</thead>
 								<tbody>
 									<tr>
-										<td>Dec 18, 2023 02:32:55 PM</td>
+										<td>Dec 18, 2023 04:31:43 PM</td>
 										<td class='linked' test-id='1'>execute</td>
 										<td>
-											<textarea disabled class="code-block">java.lang.AssertionError: Coupon With Gift And Custom Code expected [Coupon with Gift and Custom Code] but found [Coupon name doesn't match]
+											<textarea disabled class="code-block">java.lang.AssertionError: expected [Coupon With Gift And Custom Code] but found [Coupon with Gift and Custom Code]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
 	at pages.AddCoupon_page.Add_Coupon_with_Gift_and_Custom_Code(AddCoupon_page.java:142)
 	at Test.Test_AddcouponCode.execute(Test_AddcouponCode.java:16)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -917,15 +924,16 @@ Session ID: c0dee8961c953182480c8a761dc9c790
 										</td>
 									</tr>
 									<tr>
-										<td>Dec 18, 2023 02:33:15 PM</td>
+										<td>Dec 18, 2023 04:32:01 PM</td>
 										<td class='linked' test-id='2'>Add_Couponwith_gift_and_systemGenerated_code</td>
 										<td>
-											<textarea disabled class="code-block">java.lang.AssertionError: Coupon With Gift And SystemGenerated Code expected [Coupon with Gift and systemGenerated code] but found [Coupon name doesn't match]
+											<textarea disabled class="code-block">java.lang.AssertionError: expected [Coupon With Gift And SystemGenerated Code] but found [Coupon with Gift and systemGenerated code]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
 	at pages.AddCoupon_page.Add_Coupon_with_gift_and_systemGenerated_code(AddCoupon_page.java:180)
 	at Test.Test_AddcouponCode.Add_Couponwith_gift_and_systemGenerated_code(Test_AddcouponCode.java:21)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -960,58 +968,16 @@ Session ID: c0dee8961c953182480c8a761dc9c790
 										</td>
 									</tr>
 									<tr>
-										<td>Dec 18, 2023 02:33:25 PM</td>
-										<td class='linked' test-id='3'>Test_Add_Coupon_Discount_Amount_with_additional_Setting</td>
-										<td>
-											<textarea disabled class="code-block">java.lang.AssertionError: Disc Amt With Adv Setting expected [Disc Amt With Adv Setting] but found [Coupon name doesn't match]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at pages.AddCoupon_page.Add_Coupon_Discount_Amount_with_additional_Setting(AddCoupon_page.java:209)
-	at Test.Test_AddcouponCode.Test_Add_Coupon_Discount_Amount_with_additional_Setting(Test_AddcouponCode.java:26)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Dec 18, 2023 02:33:35 PM</td>
+										<td>Dec 18, 2023 04:32:22 PM</td>
 										<td class='linked' test-id='4'>Test_Add_Coupon_Dicount_amt_without_Adv</td>
 										<td>
-											<textarea disabled class="code-block">java.lang.AssertionError: Coupon With Disc Without Adv expected [Coupon with Disc without adv] but found [Coupon name doesn't match]
+											<textarea disabled class="code-block">java.lang.AssertionError: expected [Coupon With Disc Without Adv] but found [Coupon with Disc without adv]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
 	at pages.AddCoupon_page.Add_Coupon_Dicount_amt_without_Adv(AddCoupon_page.java:230)
 	at Test.Test_AddcouponCode.Test_Add_Coupon_Dicount_amt_without_Adv(Test_AddcouponCode.java:31)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1046,15 +1012,16 @@ Session ID: c0dee8961c953182480c8a761dc9c790
 										</td>
 									</tr>
 									<tr>
-										<td>Dec 18, 2023 02:33:39 PM</td>
+										<td>Dec 18, 2023 04:32:25 PM</td>
 										<td class='linked' test-id='5'>Test_Add_Coupon_Disount_percentage_with_adv</td>
 										<td>
-											<textarea disabled class="code-block">java.lang.AssertionError: Disc Pert With Adv Setting expected [Disc pert With Adv Setting] but found [Coupon name doesn't match]
+											<textarea disabled class="code-block">java.lang.AssertionError: expected [Disc Pert With Adv Setting] but found [Disc pert With Adv Setting]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
 	at pages.AddCoupon_page.Add_Coupon_Disount_percentage_with_adv(AddCoupon_page.java:259)
 	at Test.Test_AddcouponCode.Test_Add_Coupon_Disount_percentage_with_adv(Test_AddcouponCode.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1089,7 +1056,7 @@ Session ID: c0dee8961c953182480c8a761dc9c790
 										</td>
 									</tr>
 									<tr>
-										<td>Dec 18, 2023 02:33:49 PM</td>
+										<td>Dec 18, 2023 04:32:36 PM</td>
 										<td class='linked' test-id='6'>Test_Add_Coupon_Discount_percentage_without_adv</td>
 										<td>
 											<textarea disabled class="code-block">java.lang.AssertionError: Disc Pert Without Adv Setting expected [Disc pert Without Adv Setting] but found [Coupon name doesn't match]
@@ -1132,15 +1099,16 @@ Session ID: c0dee8961c953182480c8a761dc9c790
 										</td>
 									</tr>
 									<tr>
-										<td>Dec 18, 2023 02:34:04 PM</td>
+										<td>Dec 18, 2023 04:32:52 PM</td>
 										<td class='linked' test-id='8'>Test_Add_Coupon_Discount_unit_without_adv</td>
 										<td>
-											<textarea disabled class="code-block">java.lang.AssertionError: Disc Unit Without Adv Setting expected [Disc  unit Without Adv Setting] but found [Coupon name doesn't match]
+											<textarea disabled class="code-block">java.lang.AssertionError: expected [Disc Unit Without Adv Setting] but found [Disc  unit Without Adv Setting]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
 	at pages.AddCoupon_page.Add_Coupon_Discount_unit_without_adv(AddCoupon_page.java:342)
 	at Test.Test_AddcouponCode.Test_Add_Coupon_Discount_unit_without_adv(Test_AddcouponCode.java:51)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1175,15 +1143,16 @@ Session ID: c0dee8961c953182480c8a761dc9c790
 										</td>
 									</tr>
 									<tr>
-										<td>Dec 18, 2023 02:34:08 PM</td>
+										<td>Dec 18, 2023 04:32:56 PM</td>
 										<td class='linked' test-id='9'>Test_Add_Coupon_Discount_other_with_Adv</td>
 										<td>
-											<textarea disabled class="code-block">java.lang.AssertionError: Disc Other Without Adv Setting expected [Disc  other Without Adv Setting] but found [Coupon name doesn't match]
+											<textarea disabled class="code-block">java.lang.AssertionError: expected [Disc Other Without Adv Setting] but found [Disc  other Without Adv Setting]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
 	at pages.AddCoupon_page.Add_Coupon_Discount_other_with_Adv(AddCoupon_page.java:373)
 	at Test.Test_AddcouponCode.Test_Add_Coupon_Discount_other_with_Adv(Test_AddcouponCode.java:56)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1239,7 +1208,7 @@ Session ID: c0dee8961c953182480c8a761dc9c790
 								</thead>
 								<tbody>
 									<tr>
-										<td>Dec 18, 2023 02:33:53 PM</td>
+										<td>Dec 18, 2023 04:32:40 PM</td>
 										<td class='linked' test-id='7'>Test_Add_coupon_Discount_unit_with_adv</td>
 										<td>
 											<textarea disabled class="code-block">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //*[text()='Disc unit With Adv Setting] because of the following error:
@@ -1249,9 +1218,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c0dee8961c953182480c8a761dc9c790, findElement {using=xpath, value=//*[text()='Disc unit With Adv Setting]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.72, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\SAIGAU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59489}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59489/devtoo..., se:cdpVersion: 120.0.6099.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c0dee8961c953182480c8a761dc9c790
+Command: [a9d553e0ca3b594d3d5527cc65684e23, findElement {using=xpath, value=//*[text()='Disc unit With Adv Setting]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.72, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\SAIGAU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53793/devtoo..., se:cdpVersion: 120.0.6099.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a9d553e0ca3b594d3d5527cc65684e23
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1323,7 +1292,7 @@ Session ID: c0dee8961c953182480c8a761dc9c790
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>10</div>
+					<div class='panel-lead'>11</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -1335,19 +1304,19 @@ Session ID: c0dee8961c953182480c8a761dc9c790
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Dec 18, 2023 02:32:27 PM</div>
+					<div class='panel-lead'>Dec 18, 2023 04:31:15 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Dec 18, 2023 02:34:20 PM</div>
+			 		<div class='panel-lead'>Dec 18, 2023 04:33:07 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 52s+969ms</div>
+					<div class='panel-lead'>0h 1m 51s+943ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -1386,13 +1355,13 @@ Session ID: c0dee8961c953182480c8a761dc9c790
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 10,
-				passParent: 0,
-				failParent: 9,
+                parentCount: 11,
+				passParent: 1,
+				failParent: 8,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 1,
+				skipParent: 2,
 				exceptionsParent: 10,
 				childCount: 0,
 				passChild: 0,
@@ -1418,7 +1387,7 @@ Session ID: c0dee8961c953182480c8a761dc9c790
 		</script>
 		<script>
 			var timeline = {
-			        "execute":19.533,"Add_Couponwith_gift_and_systemGenerated_code":10.385,"Test_Add_Coupon_Discount_Amount_with_additional_Setting":9.787,"Test_Add_Coupon_Dicount_amt_without_Adv":3.334,"Test_Add_Coupon_Disount_percentage_with_adv":10.295,"Test_Add_Coupon_Discount_percentage_without_adv":3.352,"Test_Add_coupon_Discount_unit_with_adv":11.353,"Test_Add_Coupon_Discount_unit_without_adv":3.694,"Test_Add_Coupon_Discount_other_with_Adv":10.755,"test_EditGiftCustomCode":0
+			        "execute":18.361,"Add_Couponwith_gift_and_systemGenerated_code":10.381,"Test_Add_Coupon_Discount_Amount_with_additional_Setting":9.703,"Test_Add_Coupon_Dicount_amt_without_Adv":2.802,"Test_Add_Coupon_Disount_percentage_with_adv":11.271,"Test_Add_Coupon_Discount_percentage_without_adv":3.212,"Test_Add_coupon_Discount_unit_with_adv":11.663,"Test_Add_Coupon_Discount_unit_without_adv":3.785,"Test_Add_Coupon_Discount_other_with_Adv":10.987,"test_EditGiftCustomCode":0.001,"testDelete":0.001
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>

@@ -9,6 +9,7 @@
     <classes>
       <class name="Test.Test_AddcouponCode"/>
       <class name="Test.Test_EditGiftCustomCode"/>
+      <class name="Test.Test_Delete"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
