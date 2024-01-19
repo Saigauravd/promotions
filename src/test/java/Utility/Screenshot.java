@@ -16,7 +16,7 @@ public class Screenshot {
 
 		File source = scrshot.getScreenshotAs(OutputType.FILE);
 
-//		String path = "F:\\Desktop\\Katraj\\20 Aug Katraj\\Selenium\\"+filename+".png";
+
 
 		String path = System.getProperty("user.dir") + "\\screenshots\\" + filename + ".png";
 
